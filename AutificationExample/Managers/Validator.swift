@@ -25,7 +25,7 @@ struct Validator {
         case .password:
             //We check if password contains one big letter, one number and and is minimum eight char long.
             if let string = string {
-                return !string.isEmpty
+                return string.count >= 6
 //                let permissions = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}$")
 //                return permissions.evaluate(with: string)
             }

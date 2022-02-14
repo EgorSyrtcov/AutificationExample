@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22013CA27BA57D300C9914D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22013C927BA57D300C9914D /* WebService.swift */; };
+		E22013CD27BA592700C9914D /* LoginRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22013CC27BA592700C9914D /* LoginRequestBody.swift */; };
+		E22013CF27BA5BEF00C9914D /* LoginResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22013CE27BA5BEF00C9914D /* LoginResponseBody.swift */; };
 		E224EA1327BA23A400A5EC2F /* AutificationExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E224EA1227BA23A400A5EC2F /* AutificationExampleApp.swift */; };
 		E224EA1527BA23A400A5EC2F /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E224EA1427BA23A400A5EC2F /* ApplicationView.swift */; };
 		E224EA1727BA23A500A5EC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E224EA1627BA23A500A5EC2F /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E22013C927BA57D300C9914D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E22013CC27BA592700C9914D /* LoginRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestBody.swift; sourceTree = "<group>"; };
+		E22013CE27BA5BEF00C9914D /* LoginResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseBody.swift; sourceTree = "<group>"; };
 		E224EA0F27BA23A400A5EC2F /* AutificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E224EA1227BA23A400A5EC2F /* AutificationExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutificationExampleApp.swift; sourceTree = "<group>"; };
 		E224EA1427BA23A400A5EC2F /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22013C827BA57B600C9914D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E22013C927BA57D300C9914D /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E22013CB27BA58FC00C9914D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E22013CC27BA592700C9914D /* LoginRequestBody.swift */,
+				E22013CE27BA5BEF00C9914D /* LoginResponseBody.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E224EA0627BA23A300A5EC2F = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +86,11 @@
 		E224EA1127BA23A400A5EC2F /* AutificationExample */ = {
 			isa = PBXGroup;
 			children = (
+				E224EA1227BA23A400A5EC2F /* AutificationExampleApp.swift */,
+				E22013CB27BA58FC00C9914D /* Models */,
+				E22013C827BA57B600C9914D /* Services */,
 				E224EA2A27BA342900A5EC2F /* Managers */,
 				E224EA2527BA2FA900A5EC2F /* Components */,
-				E224EA1227BA23A400A5EC2F /* AutificationExampleApp.swift */,
 				E224EA2027BA286900A5EC2F /* Screens */,
 				E224EA1627BA23A500A5EC2F /* Assets.xcassets */,
 				E224EA1827BA23A500A5EC2F /* Preview Content */,
@@ -203,10 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22013CA27BA57D300C9914D /* WebService.swift in Sources */,
 				E224EA2727BA2FE100A5EC2F /* StandardTextField.swift in Sources */,
 				E224EA2427BA28C400A5EC2F /* Login.swift in Sources */,
+				E22013CD27BA592700C9914D /* LoginRequestBody.swift in Sources */,
 				E224EA1527BA23A400A5EC2F /* ApplicationView.swift in Sources */,
 				E224EA2927BA30A100A5EC2F /* LoginViewModel.swift in Sources */,
+				E22013CF27BA5BEF00C9914D /* LoginResponseBody.swift in Sources */,
 				E224EA2C27BA344E00A5EC2F /* Validator.swift in Sources */,
 				E224EA2F27BA458F00A5EC2F /* Main.swift in Sources */,
 				E224EA1327BA23A400A5EC2F /* AutificationExampleApp.swift in Sources */,

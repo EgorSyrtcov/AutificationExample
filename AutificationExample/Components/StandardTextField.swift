@@ -55,7 +55,7 @@ struct StandardTextField: View {
         var foregroundColor: Color {
             switch $state.wrappedValue {
             case .active:
-                return .black
+                return .red
             case .inactive:
                 return .white
             case .error:
