@@ -20,6 +20,8 @@
 		E224EA2C27BA344E00A5EC2F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E224EA2B27BA344E00A5EC2F /* Validator.swift */; };
 		E224EA2F27BA458F00A5EC2F /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E224EA2E27BA458F00A5EC2F /* Main.swift */; };
 		E224EA3127BA4E9A00A5EC2F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E224EA3027BA4E9A00A5EC2F /* MainViewModel.swift */; };
+		E264320827BC80C600E451EC /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264320727BC80C600E451EC /* ApplicationViewModel.swift */; };
+		E264320A27BC8EA400E451EC /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264320927BC8EA400E451EC /* UserSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		E224EA2B27BA344E00A5EC2F /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		E224EA2E27BA458F00A5EC2F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		E224EA3027BA4E9A00A5EC2F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E264320727BC80C600E451EC /* ApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
+		E264320927BC8EA400E451EC /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				E224EA1427BA23A400A5EC2F /* ApplicationView.swift */,
+				E264320727BC80C600E451EC /* ApplicationViewModel.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				E224EA2B27BA344E00A5EC2F /* Validator.swift */,
+				E264320927BC8EA400E451EC /* UserSession.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E22013CA27BA57D300C9914D /* WebService.swift in Sources */,
+				E264320827BC80C600E451EC /* ApplicationViewModel.swift in Sources */,
 				E224EA2727BA2FE100A5EC2F /* StandardTextField.swift in Sources */,
 				E224EA2427BA28C400A5EC2F /* Login.swift in Sources */,
 				E22013CD27BA592700C9914D /* LoginRequestBody.swift in Sources */,
@@ -238,6 +245,7 @@
 				E224EA2C27BA344E00A5EC2F /* Validator.swift in Sources */,
 				E224EA2F27BA458F00A5EC2F /* Main.swift in Sources */,
 				E224EA1327BA23A400A5EC2F /* AutificationExampleApp.swift in Sources */,
+				E264320A27BC8EA400E451EC /* UserSession.swift in Sources */,
 				E224EA3127BA4E9A00A5EC2F /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -351,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -369,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AutificationExample/Preview Content\"";
-				DEVELOPMENT_TEAM = FFYJJ79MSE;
+				DEVELOPMENT_TEAM = 25UJ4562KC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -399,7 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AutificationExample/Preview Content\"";
-				DEVELOPMENT_TEAM = FFYJJ79MSE;
+				DEVELOPMENT_TEAM = 25UJ4562KC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

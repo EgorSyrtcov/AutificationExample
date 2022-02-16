@@ -8,6 +8,10 @@
 import SwiftUI
 import Combine
 
+enum StorageKeys: String {
+    case email, signed_in, token
+}
+
 final class LoginViewModel: ObservableObject {
     
     @Published var onboardingState: Int = 0
@@ -25,9 +29,7 @@ final class LoginViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     
     //App Storage
-    @AppStorage("email") var currentEmail: String?
-    @AppStorage("password") var currentPassword: String?
-    @AppStorage("signed_in") var currentUserSignedIn: Bool = false
+    @Published var userSession = UserSession.shared
     
     // MARK: Private
     private var subscriptions = [AnyCancellable]()
@@ -72,21 +74,31 @@ final class LoginViewModel: ObservableObject {
     }
     
     private func signIn() {
-        WebService().login(email: email, password: password) { result in
-            switch result {
-            case .success(let token):
-                print(token)
-                
-//                currentEmail = email
-//                currentPassword = password
-//                withAnimation(.spring()) {
-//                    currentUserSignedIn = true
-//                }
-                
-            case .failure(let error):
-                print(error)
-            }
-        }
+        
+        userSession.currentEmail = email
+        userSession.currentToken = ""
+        userSession.currentUserSignedIn = true
+        
+        //        withAnimation(.spring()) {
+        //            currentUserSignedIn = true
+        //        }
+        
+        
+        //        WebService().login(email: email, password: password) { result in
+        //            switch result {
+        //            case .success(let token):
+        //                print(token)
+        //
+        //                currentEmail = email
+        //                currentToken = token
+        //                withAnimation(.spring()) {
+        //                    currentUserSignedIn = true
+        //                }
+        //
+        //            case .failure(let error):
+        //                print(error)
+        //            }
+        //        }
         
     }
 }

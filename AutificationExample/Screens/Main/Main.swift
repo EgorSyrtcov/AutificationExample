@@ -12,7 +12,7 @@ struct Main: View {
     @StateObject private var vm = MainViewModel()
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Text("Main screen")
             
             Image(systemName: "person.circle.fill")
@@ -20,10 +20,11 @@ struct Main: View {
                 .scaledToFit()
                 .frame(width: 200, height: 200)
             
-            Text(vm.currentEmail ?? "Your email here")
+            Text(vm.userSession.currentEmail ?? "Your email here")
+                .foregroundColor(Color.black)
             
             Text("SIGN OUT")
-                .foregroundColor(.white)
+                .foregroundColor(Color.white)
                 .font(.headline)
                 .frame(height: 55)
                 .frame(maxWidth: .infinity)
@@ -34,6 +35,7 @@ struct Main: View {
                 }
             
         }
+        .foregroundColor(Color.black)
         .font(.title)
         .padding()
         .background(Color.white)

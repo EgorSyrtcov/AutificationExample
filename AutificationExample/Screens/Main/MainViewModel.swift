@@ -11,15 +11,13 @@ import Combine
 final class MainViewModel: ObservableObject {
     
     //App Storage
-    @AppStorage("email") var currentEmail: String?
-    @AppStorage("password") var currentPassword: String?
-    @AppStorage("signed_in") var currentUserSignedIn: Bool = false
+    @Published var userSession = UserSession.shared
     
     func signOut() {
-        currentEmail = nil
-        currentPassword = nil
+        userSession.currentEmail = nil
+        userSession.currentToken = nil
         withAnimation(.spring()) {
-            currentUserSignedIn = false
+            userSession.currentUserSignedIn = false
         }
     }
 }

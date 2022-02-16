@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ApplicationView: View {
     
-    @AppStorage("signed_in") var currentUserSignedIn: Bool = false
+    @StateObject private var vm = ApplicationViewModel()
     
     var body: some View {
         
@@ -22,7 +22,7 @@ struct ApplicationView: View {
                 endRadius: UIScreen.main.bounds.height)
                 .ignoresSafeArea()
             
-            if currentUserSignedIn {
+            if vm.userSession.currentUserSignedIn {
                 Main()
             } else {
                 Login()
